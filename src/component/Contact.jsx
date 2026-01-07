@@ -7,7 +7,7 @@ export default function Contact() {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#1a043a] via-[#0b021a] to-[#12052b]" />
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative  mx-auto px-6">
         {/* Heading */}
         <h2 className="text-center text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-20">
           Contact

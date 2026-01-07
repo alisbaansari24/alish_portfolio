@@ -3,7 +3,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaReact,
-  FaJs,
+  FaJs,FaGithub 
 } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
@@ -17,6 +17,7 @@ export default function Skills() {
     { name: "Next.js", icon: <SiNextdotjs />, color: "text-white" },
     { name: "Tailwind", icon: <SiTailwindcss />, color: "text-sky-400" },
     { name: "React Native", icon: <TbBrandReactNative />, color: "text-cyan-300" },
+     { name: "GitHub", icon: <FaGithub />, color: "text-gray-800" },
   ];
 
   return (

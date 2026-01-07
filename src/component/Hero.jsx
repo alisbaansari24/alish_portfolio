@@ -1,5 +1,5 @@
 import React from 'react'
-
+import photo from '../assets/Image/myimg.png'
 export default function Hero() {
     return (
         <section id='home' className="pt-32 pb-24 relative overflow-hidden">
@@ -19,9 +19,9 @@ export default function Hero() {
                 </div>
                 <div className="flex justify-center">
                     <img
-                        src="https://via.placeholder.com/350"
+                        src={photo}
                         alt="profile"
-                        className="rounded-2xl shadow-lg"
+                        className="rounded-3xl w-xs shadow-lg"
                     />
                 </div>
             </div>
