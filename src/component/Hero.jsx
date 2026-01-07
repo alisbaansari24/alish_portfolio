@@ -21,6 +21,7 @@ export default function Hero() {
                     <img
                         src={photo}
                         alt="profile"
+                        onContextMenu={(e) => e.preventDefault()}
                         className="rounded-3xl w-xs shadow-lg"
                     />
                 </div>
