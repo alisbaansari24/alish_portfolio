@@ -13,7 +13,7 @@ import Footer from "./component/Footer";
 export default function App() {
   return (
     <Router>
-      <div className="bg-gradient-to-b from-[#0b021a] via-[#12052b] to-[#090114] text-white min-h-screen">
+      <div className="font-poppins bg-gradient-to-b from-[#0b021a] via-[#12052b] to-[#090114] text-white min-h-screen">
         <Navbar />
 
         <Routes>

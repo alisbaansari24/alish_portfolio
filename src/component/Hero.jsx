@@ -22,9 +22,16 @@ export default function Hero() {
                         src={photo}
                         alt="profile"
                         onContextMenu={(e) => e.preventDefault()}
-                        className="rounded-3xl w-xs shadow-lg"
+                        className="shadow-purple-500/40 shadow-2xl
+      rounded-full w-xs 
+      transition-all duration-500 ease-out
+      hover:scale-105
+      hover:shadow-purple-500/40
+      hover:shadow-2xl
+    "
                     />
                 </div>
+
             </div>
         </section>
     )
