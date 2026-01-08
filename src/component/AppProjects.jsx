@@ -64,7 +64,7 @@ export default function AppProjects() {
                 </p>
             </div>
 
-            <div className="max-w-6xl mx-auto space-y-28">
+            <div className="max-w-7xl mx-auto space-y-28">
                 {projects.map((project, index) => (
                     <ProjectShowcase key={index} project={project} reverse={index % 2 !== 0} />
                 ))}

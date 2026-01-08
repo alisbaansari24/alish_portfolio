@@ -3,7 +3,7 @@ import photo from '../assets/Image/myimg.png'
 export default function Hero() {
     return (
         <section id='home' className="pt-32 pb-24 relative overflow-hidden">
-            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6">
+            <div className=" mx-auto grid md:grid-cols-2 gap-12 items-center px-6">
                 <div>
                     <h2 className="text-3xl md:text-5xl font-bold leading-tight">
                         Hi, I’m <span className="text-purple-400">Alisba Ansari</span>
