@@ -97,7 +97,7 @@ function ProjectShowcase({ project, reverse }) {
                     {project.title}
                 </h3>
 
-                <p className="text-gray-400 mb-6 leading-relaxed">
+                <p className="text-gray-400 mb-6 leading-relaxed md:text-left text-justify">
                     {project.description}
                 </p>
 

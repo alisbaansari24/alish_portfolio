@@ -116,7 +116,7 @@ export default function Projects() {
                                 {project.name}
                             </h3>
 
-                            <p className="text-sm leading-relaxed text-gray-400">
+                            <p className="md:text-left text-justify text-sm leading-relaxed text-gray-400">
                                 {project.description}
                             </p>
 

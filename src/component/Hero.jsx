@@ -5,11 +5,11 @@ export default function Hero() {
         <section id='home' className="pt-32 pb-24 relative overflow-hidden">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6">
                 <div>
-                    <h2 className="text-5xl font-bold leading-tight">
+                    <h2 className="text-3xl md:text-5xl font-bold leading-tight">
                         Hi, I’m <span className="text-purple-400">Alisba Ansari</span>
                     </h2>
                     <p className="text-xl text-cyan-400 mt-2">Front-End Developer</p>
-                    <p className="mt-6 text-gray-400 max-w-md">
+                    <p className="mt-6 text-gray-400 max-w-md md:text-left text-justify">
                         I build responsive and user‑friendly web applications using React,
                         Tailwind CSS and modern JavaScript.
                     </p>
