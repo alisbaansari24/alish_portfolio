@@ -52,7 +52,7 @@ export default function AppProjects() {
     return (
         <section
             id="projects"
-            className="min-h-screen bg-black text-white px-6 py-24"
+            className="min-h-screen  text-white px-6 py-24"
         >
             {/* Heading */}
             <div className="text-center mb-20">
