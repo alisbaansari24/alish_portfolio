@@ -13,9 +13,12 @@ export default function Hero() {
                         I build responsive and user‑friendly web applications using React,
                         Tailwind CSS and modern JavaScript.
                     </p>
-                    <button className="mt-8 px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-cyan-400 text-black font-semibold">
-                        Contact Me
-                    </button>
+                    <a href="#contact">
+                        <button className="cursor-pointer mt-8 px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-cyan-400 text-black font-semibold">
+                            Contact Me
+                        </button>
+                    </a>
+
                 </div>
                 <div className="flex justify-center">
                     <img

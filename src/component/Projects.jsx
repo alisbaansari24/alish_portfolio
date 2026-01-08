@@ -4,7 +4,7 @@ import img2 from "../assets/Image/rushbaskets.png";
 import img3 from "../assets/Image/path4U.png";
 import img4 from "../assets/Image/metrobuddy.png";
 import img5 from "../assets/Image/growlotus.png";
-import img6 from "../assets/Image/image.png";
+import img6 from "../assets/Image/admissionKing.png";
 
 export default function Projects() {
     const projects = [
@@ -68,7 +68,7 @@ export default function Projects() {
                 {/* Heading */}
                 <div className="text-center">
                     <h3 className="text-3xl font-semibold text-purple-400">
-                        Recent Work
+                        Web Projects
                     </h3>
                     <p className="text-sm text-gray-300 mt-2">
                         A collection of projects I've worked on
