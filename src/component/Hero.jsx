@@ -10,8 +10,7 @@ export default function Hero() {
                     </h2>
                     <p className="text-xl text-cyan-400 mt-2">Front-End Developer</p>
                     <p className="mt-6 text-gray-400 max-w-md md:text-left text-justify">
-                        I build responsive and user‑friendly web applications using React,
-                        Tailwind CSS and modern JavaScript.
+                        Frontend Developer with 1.5+ years of experience in building responsive web applications using React.js, JavaScript, CSS, and Tailwind CSS. Experienced in creating reusable UI components, integrating REST APIs, and optimizing performance. Also has self-learned experience in React Native with 3 mobile projects.
                     </p>
                     <a href="#contact">
                         <button className="cursor-pointer mt-8 px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-cyan-400 text-black font-semibold">

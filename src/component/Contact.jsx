@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ku52b07",
+        "template_1e9g1h7",
+        formRef.current,
+        "n1UreLX0aHgvm1sSe"
+      )
+      .then(
+        () => {
+          alert("Message sent successfully!");
+          formRef.current.reset();
+        },
+        (error) => {
+          alert("Something went wrong");
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section id="contact" className="py-28 px-6 relative">
       {/* Background */}
@@ -21,13 +46,11 @@ export default function Contact() {
             </h3>
 
             <p className="mt-4 text-gray-400 max-w-md leading-relaxed">
-              A web app for visualizing personalized Spotify data. View your top
-              artists, top tracks, recently played tracks, and detailed audio
-              information about each track.
+              I’m currently seeking frontend developer opportunities. Feel free to connect or reach out.
             </p>
 
             <div className="mt-10 space-y-5 text-gray-300">
-             
+
 
               <div className="flex items-center gap-4">
                 <span className="p-3 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 text-black">
@@ -47,13 +70,15 @@ export default function Contact() {
 
           {/* Right Form */}
           <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 md:p-10 shadow-2xl">
-            <form className="space-y-6">
+            <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
               <div>
                 <label className="text-sm text-gray-300">Name</label>
                 <input
                   type="text"
+                  name="name"
+                  required
                   placeholder="Enter Your Name"
-                  className="mt-2 w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-gray-200 focus:outline-none focus:border-cyan-400"
+                  className="mt-2 w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-gray-200"
                 />
               </div>
 
@@ -61,17 +86,21 @@ export default function Contact() {
                 <label className="text-sm text-gray-300">Email</label>
                 <input
                   type="email"
+                  name="email"
+                  required
                   placeholder="Enter Your Email"
-                  className="mt-2 w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-gray-200 focus:outline-none focus:border-cyan-400"
+                  className="mt-2 w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-gray-200"
                 />
               </div>
 
               <div>
                 <label className="text-sm text-gray-300">Message</label>
                 <textarea
+                  name="message"
                   rows="4"
-                  placeholder=""
-                  className="mt-2 w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-gray-200 focus:outline-none focus:border-cyan-400 resize-none"
+                  required
+                  placeholder="Write your message..."
+                  className="mt-2 w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-gray-200 resize-none"
                 />
               </div>
 

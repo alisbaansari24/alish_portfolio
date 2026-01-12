@@ -9,24 +9,28 @@ import img6 from "../assets/Image/admissionKing.png";
 export default function Projects() {
     const projects = [
         {
-            name: "Ourmicrolife",
+            name: "OurMicroLife",
             img: img1,
+            tech: ["React.js", "Tailwind CSS", "Material UI", "Context API", "REST APIs"],
             description:
-                "OurMicroLife is a trusted online marketplace that connects customers with a wide range of quality products and services, focusing on fast delivery, easy payments, and a seamless shopping experience.",
+                "OurMicroLife is dynamic an e-commerce marketplace that provides a smooth and reliable shopping experience with fast delivery, secure payments, and a user-friendly interface. The platform focuses on performance, scalability, and seamless API-driven data handling.",
             right: false,
             link: "https://www.ourmicrolife.com/",
         },
         {
             name: "Rushbaskets",
+            tech: ["React.js", "Tailwind CSS"],
             img: img2,
             description:
-                "RushBaskets is an online grocery and essentials delivery platform designed to provide users with a fast, convenient, and reliable shopping experience.",
+                "RushBaskets is an online grocery and essentials delivery platform that enables users to quickly browse products, manage their cart, and place orders through a clean and responsive interface. The application focuses on performance, usability, and a smooth shopping experience across devices.",
+
             right: true,
             link: "https://rushbaskets.com/",
         },
         {
             name: "Path4U",
             img: img3,
+            tech: ["React.js", "Tailwind CSS"],
             description:
                 "Path4U is an education-focused digital platform supporting students in exploring career paths and accessing learning resources.",
             right: false,
@@ -35,22 +39,27 @@ export default function Projects() {
         {
             name: "Metrobuddy",
             img: img4,
+            tech: ["React.js", "Tailwind CSS", "Context API", "REST APIs"],
             description:
-                "MetroBuddy is a business discovery platform connecting users with trusted local services and professionals.",
+                "MetroBuddy is a digital platform that allows users to search and discover nearby businesses and service providers with a smooth, user-friendly browsing experience.",
+
             right: true,
             link: "https://metrobuddy.in/",
         },
         {
             name: "Growlotus",
             img: img5,
+            tech: ["React.js", "Tailwind CSS", "Context", "REST APIs"],
             description:
-                "Grow Lotus Fintech offers corporate loans, SME financing, and advisory services with a customer-first approach.",
+                "Grow Lotus Fintech is a financial services platform providing corporate loans, SME financing, and advisory solutions through a secure and user-centric digital interface.",
+
             right: false,
             link: "https://growlotusfintech.com/",
         },
         {
             name: "Admission King",
             img: img6,
+              tech: ["React.js", "Tailwind CSS" ],
             description:
                 "Admission King is an educational platform helping students find courses, colleges, and career guidance, simplifying the admission process in India.",
             right: true, // alternating position
@@ -116,9 +125,20 @@ export default function Projects() {
                                 {project.name}
                             </h3>
 
-                            <p className="md:text-left text-justify text-sm leading-relaxed text-gray-400">
+                            <p className="md:text-justify text-justify text-sm leading-relaxed text-gray-400 mb-3">
                                 {project.description}
                             </p>
+                            <div className="flex flex-wrap gap-2 mb-3">
+                                {project.tech?.map((tech, index) => (
+                                    <span
+                                        key={index}
+                                        className="px-3 py-1 text-xs rounded-full border border-purple-500/30 text-purple-300"
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+
 
                             <div className="flex mt-5">
                                 <a

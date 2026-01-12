@@ -23,7 +23,7 @@ const projects = [
     {
         title: "Food Delivery App",
         description:
-            "A modern food ordering app featuring restaurant browsing, cart functionality, secure authentication, and order history management.",
+            "A modern food ordering app featuring restaurant browsing,enabling users to browse menus, cart functionality, secure authentication, and order history management.",
 
         tech: ["React Native", "Tailwind CSS"],
         screens: [img1, img2, img3, img4, img5, img6, img7],
@@ -32,7 +32,9 @@ const projects = [
     {
         title: "Expense Tracker App",
         description:
-            "Track daily expenses with category-wise analytics and monthly insights.",
+            "A mobile expense tracking application that helps users monitor daily spending with category-wise analytics and detailed monthly insights.",
+        tech: ["React Native", "Charts"],
+
         tech: ["React Native", "Charts"],
         screens: [exp1, exp2, exp3, exp4, exp5, exp6, exp7],
         apk: "/apk/expense.apk",
