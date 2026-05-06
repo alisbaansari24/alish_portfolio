@@ -5,6 +5,8 @@ import img3 from "../assets/Image/path4U.png";
 import img4 from "../assets/Image/metrobuddy.png";
 import img5 from "../assets/Image/growlotus.png";
 import img6 from "../assets/Image/admissionKing.png";
+import img7 from "../assets/Image/image.png";
+import img8 from "../assets/Image/contenaissance.png";
 
 export default function Projects() {
     const projects = [
@@ -59,12 +61,30 @@ export default function Projects() {
         {
             name: "Admission King",
             img: img6,
-              tech: ["React.js", "Tailwind CSS" ],
+            tech: ["React.js", "Tailwind CSS"],
             description:
                 "Admission King is an educational platform helping students find courses, colleges, and career guidance, simplifying the admission process in India.",
             right: true, // alternating position
             link: "https://admissionking.com/",
         },
+        {
+            name: "Rit'z Media World",
+            img: img7,
+            tech: ["Next.js", " Tailwind CSS", "Responsive Design", "Context API", "REST APIs", "Performance Optimization"],
+            description:
+                "A modern, animation-driven digital platform designed to deliver high-performance brand experiences through interactive visuals, smooth transitions, and responsive design. Contributed to developing scalable frontend interfaces, reusable UI components, and engaging user interactions focused on performance and seamless cross-device experience. The project emphasizes creative storytelling, optimized layouts, and modern web standards for strong brand presentation and user engagement.",
+            right: false,
+            link: "https://ritzmediaworld.com/",
+        },
+        {
+            name: "Contenaissance",
+            img: img8,
+            tech: ["Next.js", "Tailwind CSS", "GSAP", "Framer Motion", "Lenis","Scroll-Based Animations","Responsive Design","Performance Optimization"],
+            description:
+                "A modern and visually immersive digital platform focused on delivering smooth, interactive, and animation-rich user experiences. Developed responsive frontend interfaces with advanced scroll-based animations, seamless page transitions, and engaging motion effects to create a highly dynamic browsing experience. The project emphasizes performance optimization, creative storytelling, and modern UI interactions across all devices.",
+            right: true,
+            link: "https://contenaissance.com/",
+        }
     ];
 
     return (
