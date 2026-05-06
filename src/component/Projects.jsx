@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../assets/Image/ourmicrolife.png";
-import img2 from "../assets/Image/rushbaskets.png";
+import img2 from "../assets/Image/rusbasket.png";
 import img3 from "../assets/Image/path4U.png";
 import img4 from "../assets/Image/metrobuddy.png";
 import img5 from "../assets/Image/growlotus.png";
@@ -10,15 +10,7 @@ import img8 from "../assets/Image/contenaissance.png";
 
 export default function Projects() {
     const projects = [
-        {
-            name: "OurMicroLife",
-            img: img1,
-            tech: ["React.js", "Tailwind CSS", "Material UI", "Context API", "REST APIs"],
-            description:
-                "OurMicroLife is dynamic an e-commerce marketplace that provides a smooth and reliable shopping experience with fast delivery, secure payments, and a user-friendly interface. The platform focuses on performance, scalability, and seamless API-driven data handling.",
-            right: false,
-            link: "https://www.ourmicrolife.com/",
-        },
+        
         {
             name: "Rushbaskets",
             tech: ["React.js", "Tailwind CSS"],
@@ -79,7 +71,7 @@ export default function Projects() {
         {
             name: "Contenaissance",
             img: img8,
-            tech: ["Next.js", "Tailwind CSS", "GSAP", "Framer Motion", "Lenis","Scroll-Based Animations","Responsive Design","Performance Optimization"],
+            tech: ["Next.js", "Tailwind CSS", "GSAP", "Framer Motion", "Lenis", "Scroll-Based Animations", "Responsive Design", "Performance Optimization"],
             description:
                 "A modern and visually immersive digital platform focused on delivering smooth, interactive, and animation-rich user experiences. Developed responsive frontend interfaces with advanced scroll-based animations, seamless page transitions, and engaging motion effects to create a highly dynamic browsing experience. The project emphasizes performance optimization, creative storytelling, and modern UI interactions across all devices.",
             right: true,
